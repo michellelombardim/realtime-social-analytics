@@ -1,0 +1,26 @@
+{
+  "name": "realtime-social-analytics",
+  "version": "1.0.0",
+  "description": "Dashboard showing statistics (likes, retweets, followers) for social networks",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "npm start --prefix client",
+    "build": "npm run build --prefix client"
+  },
+  "devDependencies": {
+    "concurrently": "^6.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michellelombardim/realtime-social-analytics.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michellelombardim/realtime-social-analytics/issues"
+  },
+  "homepage": "https://github.com/michellelombardim/realtime-social-analytics#readme"
+}
